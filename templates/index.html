@@ -27,7 +27,7 @@
 			</header>
 
 		<!-- Banner -->
-			<section id="banner" background-image ="{{ url_for('static',filename='pic04.jpg') }}">
+			<section id="banner">
 				<h1>🌎 Help Refugees Worldwide 🌎</h1>
 				<p>With TravlerPack.</p>
 			</section>
@@ -38,11 +38,11 @@
 					<div class="flex flex-3">
 						<article>
 							<header>
-								<h3>TravlerPack is :.</h3>
+								<h3>TravlerPack is :</h3>
 							</header>
 							<p>TravlerPack is a multi-purpose sleeping bag designed to improve the quality of life of displaced persons in exposed, vulnerable living conditions..</p>
 							<footer>
-								<a href="#" class="button special">Learn</a>
+								<a href="{{ url_for('about') }}" class="button special">Learn</a>
 							</footer>
 						</article>
 						<article>
@@ -51,7 +51,7 @@
 							</header>
 							<p>So far, we’ve distributed 1,000 TravlerPacks to refugees like this young girl in Idlib, Syria. We currently have another 160 in Beirut, Lebanon ready for distribution in the Beqaa Valley. </p>
 							<footer>
-								<a href="#" class="button special">Donate</a>
+								<a href="{{ url_for('donate') }}" class="button special">Donate</a>
 							</footer>
 						</article>
 						<article>
@@ -60,7 +60,7 @@
 							</header>
 							
 							<footer>
-								<a href="#" class="button special">More</a>
+								<a href="#middle" class="button special">More</a>
 							</footer>
 						</article>
 					</div>
