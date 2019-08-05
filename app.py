@@ -14,7 +14,12 @@ def index():
 @app.route('/about')
 def about():
 	return render_template('about.html')
-
+@app.route('/donate')
+def donate():
+	return render_template('donate.html')
+@app.route('/user_guide')
+def user_guide():
+	return render_template('userguide.html')
 # Running the Flask app
 if __name__ == "__main__":
     app.run(debug=True)

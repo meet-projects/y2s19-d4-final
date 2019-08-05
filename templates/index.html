@@ -16,18 +16,18 @@
 		<!-- Header -->
 			<header id="header">
 				<div class="inner">
-					<a href="index.html" class="logo">TravlerPack</a>
+					<a href="{{ url_for('index') }}" class="logo">TravlerPack</a>
 					<nav id="nav">
-						<a href="index.html">Home</a>
-						<a href="generic.html">Generic</a>
-						<a href="elements.html">Elements</a>
+						<a href="{{ url_for('index') }}">Home</a>
+						<a href="{{ url_for('about') }}">Generic</a>
+						<a href="{{ url_for('donate') }}">Elements</a>
 					</nav>
 					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
 				</div>
 			</header>
 
 		<!-- Banner -->
-			<section id="banner">
+			<section id="banner" background-image ="{{ url_for('static',filename='pic04.jpg') }}">
 				<h1>🌎 Help Refugees Worldwide 🌎</h1>
 				<p>With TravlerPack.</p>
 			</section>
