@@ -9,8 +9,11 @@ app = Flask(__name__)
 
 # App routing code here
 @app.route('/')
-def home():
-    return render_template('home.html')
+def index():
+    return render_template('index.html')
+@app.route('/about')
+def about():
+	return render_template('about.html')
 
 # Running the Flask app
 if __name__ == "__main__":
