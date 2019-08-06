@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<!--
+	Theory by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Userguide</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static',filename='main.css') }}" />
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="{{ url_for('static',filename='userguide-style.css') }}" >
+  	<script type="text/javascript">
+		// MDB Lightbox Init
+			$(function () {
+			$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+			});
+  	</script>
+	</head>
+	<body class="subpage">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="{{ url_for('index') }}" class="logo">TravlerPack</a>
+					<nav id="nav">
+						<a href="{{ url_for('index') }}">Home</a>
+						<a href="{{ url_for('about') }}">About Us</a>
+						<a href="{{ url_for('donate') }}">Donate</a>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
+
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2>User Guide</h2>
+					</header>
+					<img src="{{ url_for ('static', filename='TravlerPack.jpg')}}" style="height: auto; width: auto;" alt="TravlerPack" class="center" >
+
+					<img src="{{ url_for ('static', filename='pocketstorage.jpg')}}" style="height: auto; width: auto;" alt="pocketstorage" class="center">
+
+					<img src="{{ url_for ('static', filename= 'portability.jpg')}}" style="height: auto; width: auto;" alt="portability" class="center">
+
+					<img src="{{ url_for ('static', filename='combiningbags.jpg')}}" style="height: auto; width: auto;" alt="combiningbags" class="center">
+
+					<img src="{{ url_for ('static', filename='unzippingthebag.jpg')}}" style="height: auto; width: auto;" alt="unzippingthebag" class="center">
+
+					<img src="{{ url_for ('static', filename='pillowpocket.jpg')}}" style="height: auto; width: auto;" alt="	pillowpocket" class="center">
+
+		<div class="row">
+  <div class="col-md-12">
+
+    <div id="mdb-lightbox-ui"></div>
+
+    <div class="mdb-lightbox">
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(145).jpg" data-size="1600x1067">
+          <img alt="picture" src="{{ url_for ('static', filename='pocketstorage.jpg')}}" class="img-fluid">
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(150).jpg" data-size="1600x1067">
+          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(150).jpg" class="img-fluid" />
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(152).jpg" data-size="1600x1067">
+          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(152).jpg" class="img-fluid" />
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(42).jpg" data-size="1600x1067">
+          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(42).jpg" class="img-fluid" />
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(151).jpg" data-size="1600x1067">
+          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(151).jpg" class="img-fluid" />
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(40).jpg" data-size="1600x1067">
+          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(40).jpg" class="img-fluid" />
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(148).jpg" data-size="1600x1067">
+          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(148).jpg" class="img-fluid" />
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(147).jpg" data-size="1600x1067">
+          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(147).jpg" class="img-fluid" />
+        </a>
+      </figure>
+
+      <figure class="col-md-4">
+        <a href="https://mdbootstrap.com/img/Photos/Lightbox/Original/img%20(149).jpg" data-size="1600x1067">
+          <img alt="picture" src="https://mdbootstrap.com/img/Photos/Lightbox/Thumbnail/img%20(149).jpg" class="img-fluid" />
+        </a>
+      </figure>
+
+    </div>
+
+  </div>
+</div>
+
+					
+					
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

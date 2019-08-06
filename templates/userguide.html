@@ -1,21 +1,72 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
+<!--
+	Theory by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
 <html>
-<head>
-	<title>User Guide</title>
-	<link rel="stylesheet" href="{{ url_for('static',filename='userguide-style.css') }}" >
-</head>
-<body>
-<!--first img-->
-	<img src="{{ url_for ('static', filename='TravlerPack.jpg')}}" width="500" height="500" alt="TravlerPack" class="center" >
+	<head>
+		<title>Userguide</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="stylesheet" href="{{ url_for('static',filename='main.css') }}" />
+		<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" href="{{ url_for('static',filename='userguide-style.css') }}" >
+	</head>
+	<body class="subpage">
 
-	<img src="{{ url_for ('static', filename='pocketstorage.jpg')}}" width="500" height="500" alt="pocketstorage" class="center">
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="{{ url_for('index') }}" class="logo">TravlerPack</a>
+					<nav id="nav">
+						<a href="{{ url_for('index') }}">Home</a>
+						<a href="{{ url_for('about') }}">About Us</a>
+						<a href="{{ url_for('donate') }}">Donate</a>
+					<a href="#navPanel" class="navPanelToggle"><span class="fa fa-bars"></span></a>
+				</div>
+			</header>
 
-	<img src="{{ url_for ('static', filename= 'portability.jpg')}}" width="500" height="500" alt="portability" class="center">
+		<!-- Three -->
+			<section id="three" class="wrapper">
+				<div class="inner">
+					<header class="align-center">
+						<h2>User Guide</h2>
+					</header>
+					<img src="{{ url_for ('static', filename='TravlerPack.jpg')}}" style="height: auto; width: auto;" alt="TravlerPack" class="center" >
 
-	<img src="{{ url_for ('static', filename='combiningbags.jpg')}}" width="500" height="500" alt="combiningbags" class="center">
+					<img src="{{ url_for ('static', filename='pocketstorage.jpg')}}" style="height: auto; width: auto;" alt="pocketstorage" class="center">
 
-	<img src="{{ url_for ('static', filename='unzippingthebag.jpg')}}" width="500" height="500" alt="unzippingthebag" class="center">
+					<img src="{{ url_for ('static', filename= 'portability.jpg')}}" style="height: auto; width: auto;" alt="portability" class="center">
 
-	<img src="{{ url_for ('static', filename='pillowpocket.jpg')}}" width="500" height="500" alt="pillowpocket" class="center">
-</body>
+					<img src="{{ url_for ('static', filename='combiningbags.jpg')}}" style="height: auto; width: auto;" alt="combiningbags" class="center">
+
+					<img src="{{ url_for ('static', filename='unzippingthebag.jpg')}}" style="height: auto; width: auto;" alt="unzippingthebag" class="center">
+
+					<img src="{{ url_for ('static', filename='pillowpocket.jpg')}}" style="height: auto; width: auto;" alt="	pillowpocket" class="center">
+
+					
+					
+					
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="flex">
+						<div class="copyright">
+							&copy; Untitled. Design: <a href="https://templated.co">TEMPLATED</a>. Images: <a href="https://unsplash.com">Unsplash</a>.
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
