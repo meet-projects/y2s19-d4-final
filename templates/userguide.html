@@ -2,14 +2,20 @@
 <html>
 <head>
 	<title>User Guide</title>
+	<link rel="stylesheet" href="{{ url_for('static',filename='userguide-style.css') }}" >
 </head>
 <body>
 <!--first img-->
-	<img src="{{ url_for ('static', filename='TravlerPack.jpg')}}" width="500" height="500">
-	<img src="{{ url_for ('static', filename='pocketstorage.jpg')}}" width="500" height="500">
-	<img src="{{ url_for ('static', filename= 'portability.jpg')}}" width="500" height="500">
-	<img src="{{ url_for ('static', filename='combiningbags.jpg')}}" width="500" height="500">
-	<img src="{{ url_for ('static', filename='unzippingthebag.jpg')}}" width="500" height="500">
-	<img src="{{ url_for ('static', filename='pillowpocket.jpg')}}" width="500" height="500">
+	<img src="{{ url_for ('static', filename='TravlerPack.jpg')}}" width="500" height="500" alt="TravlerPack" class="center" >
+
+	<img src="{{ url_for ('static', filename='pocketstorage.jpg')}}" width="500" height="500" alt="pocketstorage" class="center">
+
+	<img src="{{ url_for ('static', filename= 'portability.jpg')}}" width="500" height="500" alt="portability" class="center">
+
+	<img src="{{ url_for ('static', filename='combiningbags.jpg')}}" width="500" height="500" alt="combiningbags" class="center">
+
+	<img src="{{ url_for ('static', filename='unzippingthebag.jpg')}}" width="500" height="500" alt="unzippingthebag" class="center">
+
+	<img src="{{ url_for ('static', filename='pillowpocket.jpg')}}" width="500" height="500" alt="pillowpocket" class="center">
 </body>
 </html>

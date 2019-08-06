@@ -1,0 +1,12 @@
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+
+.center.resize{
+	width:200px;
+	height:40px;
+	max-width:50%;
+	max-height:50%;
+}

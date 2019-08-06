@@ -20,6 +20,10 @@ def donate():
 @app.route('/user_guide')
 def user_guide():
 	return render_template('userguide.html')
+@app.route('/user_guide_style')
+def user_guide_style():
+	return render_template('userguide-style.css')
+
 # Running the Flask app
 if __name__ == "__main__":
     app.run(debug=True)
