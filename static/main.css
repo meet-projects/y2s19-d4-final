@@ -58,6 +58,19 @@
 	}
 
 /* Containers */
+=======
+	.textPicR{
+		position: absolute;
+		left: 65%;
+		transform:translateX(-50%);
+		padding-top: 300px;
+	}
+	.textPicL{
+		position: absolute;
+		right: 50%;
+		transform: translateX(-50%);
+		padding-top: 300px;
+	}
 
 	.container {
 		margin-left: auto;
