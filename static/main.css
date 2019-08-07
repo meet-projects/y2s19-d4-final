@@ -49,6 +49,11 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	nav {
+		font-size: 25px;
+		font-weight: bold;
+	}
+
 /* Box Model */
 
 	*, *:before, *:after {
