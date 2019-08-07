@@ -5,14 +5,21 @@ from sqlalchemy import create_engine
 
 Base = declarative_base()
 
-# Place your database schema code here
-
-# Example code:
-class Student(Base):
-    __tablename__ = "students"
-    id = Column(Integer, primary_key = True)
-    name = Column(String)
-    year = Column(Integer)
-
-    def __repr__(self):
-        return ("Student name: {}, Student year:{}".format(self.name, self.year))
+class Donor(Base):
+	__tablename__ = 'donors'
+	donor_id = Column(Integer,primary_key=True)
+	donor_first_name = Column(String)
+	donor_last_name = Column(String)
+	donor_email = Column(String)
+	donor_message = Column(String)
+	def __repr__(self):
+		return ("Donor's First Name: {}\n"
+				"Donor's Last Name: {}\n"
+				"Donor's email: {}\n"
+				"Donor's message: {}\n"
+				"ID: {}").format(
+					self.donor_first_name,
+					self.donor_last_name,
+					self.donor_email,
+					self.donor_message,
+					self.donor_id)
